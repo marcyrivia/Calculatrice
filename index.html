@@ -7,59 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    
-        <div class="calculator">
-           <div class="content">
-            <input type="text" placeholder="0" readonly id="screen">
-            <div>
-           
-                
-                <button type="button" class="bouton" value="1"> 1 </button>
-
-
-                <button type="button" class="bouton" value="2"  >2 </button>
-
-
-                <button type="button" class="bouton" value="3" >3</button>
-
-                <button type="button" class="bouton" value="4" >4</button>
-
-
-                <button type="button" class="bouton" value="5" >5</button>
-
-
-                <button type="button" class="bouton" value="6"  >6</button>
-
-                <button type="button" class="bouton" value="7" >7</button>
-
-                <button type="button" class="bouton" value="8"  >8</button>
-
-                <button type="button" class="bouton" value="9" >9</button>
-                <br>
-                <button type="button" class="delete"  value="C"  >C</button>
-                <button type="button" class="delete"  value="AC"  >AC</button>
-
-
-                <button type="button" class="bouton" value="0" >0</button>
-
-                <button type="button" class="bouton" value="."  >.</button>
-
-
-
-
-                <button class="main" type="button" value="="  > =</button>
-                        </div>
-                    </div>
-                </div>
-           </div> 
+    <div class="container">
+        <div class="display">
+            <input type="text" id="inputBox" value="0">
+        </div>
+        <div class="row">
+            <button type="button" class="delete">AC</button>
+            <button type="button" class="delete">DEL</button>
+            <button type="button" class="main">%</button>
+            <button type="button" class="main">/</button>
+        </div>
+        <div class="row">
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button" class="main">*</button>
+        </div>
+        <div class="row">
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button" class="main">+</button>
+        </div>
+        <div class="row">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button" class="main">-</button>
+        </div>
+        <div class="row">
+            <button type="button" id="plusMinus">&#xB1;</button>
+            <button type="button">0</button>
+            <button type="button">.</button>
+            <button type="button" class="main">=</button>
         </div>
     </div>
-
-
-
-
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,20 +1,28 @@
-const screen = document.querySelector("#screen");
-const buttons = document.querySelectorAll("button");
-let output = "";
-const specialChars = ["%", "*", "/", "-", "+", "=", ]
-const calculate = (btnValue) => {
-  if(btnValue == "=" && btnValue !== ""){
-    input = eval(output.replace("%","/100",))
-  }else if (btnValue === "AC"){
-    output= ""
-  } else if (btnValue === "C"){
-    output = output.toString().slice(0, -1)
-  } else{
-    if (output === "" && specialChars)
-  }
-  display.value = output;
-}
+let inputBox = document.querySelector("#inputBox")
+let button = document.querySelectorAll("button")
+let string = ""
 
-buttons.forEach((button) => {
-  button.addEventListener("click", (e) => calculate(e.target.dataset.value)) 
-})
+button.forEach(element => {
+  element.addEventListener("click", (b) =>{
+    if(b.target.innerText == "="){
+      string = String(eval(string))
+      inputBox.value = string
+    }
+    else if (b.target.innerText == "AC"){
+      string = ""
+      inputBox.value = string
+    }
+    else if (b.target.innerText == "DEL"){
+      string = string.substring(0, string.length - 1)
+      inputBox.value = string
+    }
+    else if (b.target.innerText == "plusMinus"){
+      string = String(-eval(string))
+      inputBox.value = string
+    }
+    else{
+      string += b.target.innerText
+      inputBox.value = string
+    }
+  })
+});
