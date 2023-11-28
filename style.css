@@ -4,7 +4,9 @@
     margin: 0;
     box-sizing: border box;
 }
-
+.darkness{
+    
+}
 body{
     min-height: 100vh;
     max-width: 100%;
@@ -20,6 +22,21 @@ background-color: #222225;
 border-radius: 15px;
 }
 
+
+#icon{
+    color: white;
+    font-size: 25px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+
+.bi-sun-fill{
+    height: 80px;
+    color: white;
+    margin-left: 3px;
+    margin-top: 3px;
+}
 input{
     width: 30vh;
     padding: 1vh;
@@ -60,3 +77,8 @@ button:active{
 /* 2986BE
 222225
 #D93830 */
+
+.light-theme{
+    background: white;
+    color: #222225;
+}
