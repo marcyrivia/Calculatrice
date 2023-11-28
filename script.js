@@ -64,7 +64,7 @@ switchs.addEventListener("click", function() {
     // Iterate through each chiffre and set the background color back to default
     chiffres.forEach(function(chiffre) {
       chiffre.style.backgroundColor = "initial";
-      chiffre.style.color = "initial";
+      chiffre.style.color = "white";
     });
   }
 });
