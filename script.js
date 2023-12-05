@@ -55,6 +55,7 @@ switchs.addEventListener("click", function() {
     switchs.classList.add("bi-moon-fill");
     switchs.style.color = "black";
     container.style.backgroundColor = "#fff";
+    inputBox.style.color = "black";
     body.style.backgroundColor = "#222225"; // Remplacez "votreCouleurSouhaitée" par la couleur que vous souhaitez
 
     // Parcours chaque chiffre et définis la couleur de fond
@@ -76,6 +77,7 @@ switchs.addEventListener("click", function() {
     // Sinon, ajoute la première classe et supprime la deuxième classe
     switchs.classList.add("bi-brightness-high-fill");
     switchs.classList.remove("bi-moon-fill");
+    inputBox.style.color = "white";
     body.style.backgroundColor = "white";
     switchs.style.color = "white";
     container.style.backgroundColor = "#222225";
