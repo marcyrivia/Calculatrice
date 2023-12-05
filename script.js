@@ -32,8 +32,6 @@ buttons.forEach(button => {
     } else if (!event.target.classList.contains("opr")) {
       string += buttonText
       inputBox.value = string
-    } else if (inputBox.value = secretCode){
-
     }
   });
 });
